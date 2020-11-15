@@ -8,8 +8,10 @@
     <title>Hangman</title>
   </head>
   <body>
-    <h2>HANGMAN</h2>
+    <h1>HANGMAN</h1>
     <p>Try to find the word! | Enter letters</p>
+
+    <!-- Game Container -->
     <div class="game-container">
       <svg height="300" width="300" class="figure-container">
         <!-- Rod -->
@@ -18,16 +20,42 @@
         <line x1="140" y1="20" x2="140" y2="60" />
         <line x1="35" y1="170" x2="85" y2="170" />
         <!-- Head -->
-        <circle cx="140" cy="75" r="15" />
+        <circle cx="140" cy="75" r="15" class="body-part" />
         <!-- Body -->
-        <line x1="140" y1="90" x2="140" y2="130" />
+        <line x1="140" y1="90" x2="140" y2="130" class="body-part" />
         <!-- Arms -->
-        <line x1="140" y1="90" x2="120" y2="110" />
-        <line x1="140" y1="90" x2="160" y2="110" />
+        <line x1="140" y1="90" x2="120" y2="110" class="body-part" />
+        <line x1="140" y1="90" x2="160" y2="110" class="body-part" />
         <!-- Legs -->
-        <line x1="140" y1="130" x2="120" y2="150" />
-        <line x1="140" y1="130" x2="160" y2="150" />
+        <line x1="140" y1="130" x2="120" y2="150" class="body-part" />
+        <line x1="140" y1="130" x2="160" y2="150" class="body-part" />
       </svg>
+      <div class="wrong-letters-container">
+        <div id="wrong-letters">
+          <p>Wrong</p>
+          <span>a,e,f,g</span>
+        </div>
+      </div>
+      <div class="word" id="word">
+        <div class="letter">h</div>
+        <div class="letter">e</div>
+        <div class="letter">l</div>
+        <div class="letter">l</div>
+        <div class="letter">o</div>
+      </div>
+    </div>
+
+    <!-- Message Container -->
+    <div class="popup-container" id="popup-container">
+      <div class="popup">
+        <h2 id="final-message">You Won!</h2>
+        <button id="play-button">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div class="notification-container" id="notification-container">
+      <p>You have already entered this letter.</p>
     </div>
   </body>
 </html>
