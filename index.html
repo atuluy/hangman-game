@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Hangman</title>
+  </head>
+  <body>
+    <h2>HANGMAN</h2>
+    <p>Try to find the word! | Enter letters</p>
+    <div class="game-container">
+      <svg height="300" width="300" class="figure-container">
+        <!-- Rod -->
+        <line x1="60" y1="20" x2="140" y2="20" />
+        <line x1="60" y1="20" x2="60" y2="170" />
+        <line x1="140" y1="20" x2="140" y2="60" />
+        <line x1="35" y1="170" x2="85" y2="170" />
+        <!-- Head -->
+        <circle cx="140" cy="75" r="15" />
+        <!-- Body -->
+        <line x1="140" y1="90" x2="140" y2="130" />
+        <!-- Arms -->
+        <line x1="140" y1="90" x2="120" y2="110" />
+        <line x1="140" y1="90" x2="160" y2="110" />
+        <!-- Legs -->
+        <line x1="140" y1="130" x2="120" y2="150" />
+        <line x1="140" y1="130" x2="160" y2="150" />
+      </svg>
+    </div>
+  </body>
+</html>
